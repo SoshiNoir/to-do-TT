@@ -1,3 +1,4 @@
+import { ClipboardText } from "phosphor-react";
 import styles from "./Dashboard.module.css";
 import { Task } from "./Task";
 
@@ -19,8 +20,14 @@ export function Dashboard() {
             </div>
           </div>
         </div>
+
+        <div className={styles.empty}>
+          <ClipboardText size={56} />
+          <strong>Você ainda não tem tarefas cadastradas</strong>
+          <p>Crie tarefas e organize seus itens a fazer</p>
+        </div>
+
         <div className={styles.task}>
-          <Task />
           <Task />
           <Task />
           <Task />

@@ -13,3 +13,16 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 }
+
+.check {
+  background: transparent;
+  border: none;
+  line-height: 0.2px;
+}
+
+.delete {
+  background: transparent;
+  border: none;
+  line-height: 0.2px;
+  color: var(--gray-300);
+}
