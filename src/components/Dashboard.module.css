@@ -1,0 +1,57 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  gap: 24px;
+  margin-top: 64px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+
+  width: 736px;
+
+}
+
+.info div {
+  display: flex;
+  gap: 8px;
+}
+
+.criadas {
+  color: var(--blue-700);
+}
+
+.concluidas {
+  color: var(--purple-500);
+
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 8px;
+
+  height: 19px;
+
+  background: var(--gray-400);
+  border-radius: 999px;
+
+  color: var(--gray-200);
+}
