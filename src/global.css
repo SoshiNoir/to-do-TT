@@ -15,6 +15,8 @@
 
   --blue-700: #4EA8DE;
   --blue-900: #1E6F9F;
+
+  --red-500: #E25858;
 }
 
 * {
@@ -27,8 +29,12 @@ body {
   background: var(--gray-600);
 }
 
-body, input, textarea, button {
+body, input, input, button {
   font-family: 'Inter';
   font-weight: 400;
   font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
 }

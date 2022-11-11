@@ -1,10 +1,7 @@
-.task {
+.taskWrapper {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px;
-  gap: 12px;
-
+  justify-content: space-between;
+  align-items: center;
   width: 736px;
   height: 72px;
 
@@ -12,7 +9,26 @@
   background: var(--gray-500);
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  padding: 16px;
+
 }
+
+.task {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.task strike {
+  color: var(--gray-300);
+}
+
+.task img {
+ width: 24px;
+ height: 24px;
+}
+
+
 
 .check {
   background: transparent;
@@ -25,4 +41,14 @@
   border: none;
   line-height: 0.2px;
   color: var(--gray-300);
+}
+
+.delete:hover {
+  color: var(--red-500);
+}
+
+.task img:hover {
+  filter: contrast(200%);
+border-radius: 100%;
+overflow: hidden;
 }

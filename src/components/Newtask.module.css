@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.newTask textarea {
+.newTask input {
   width: 638px;
   height: 54px;
   align-items: center;
@@ -34,7 +34,6 @@
   justify-content: center;
   align-items: center;
   background: var(--blue-900);
-  width: 90px;
   height: 52px;
   padding: 1rem;
   border-radius: 8px;
