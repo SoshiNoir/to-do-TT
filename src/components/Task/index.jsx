@@ -1,9 +1,9 @@
 import { Trash } from "phosphor-react";
 import React from "react";
-import styles from "./Task.module.css";
+import styles from "./styles.module.css";
 
-import check from "../assets/check.svg";
-import uncheck from "../assets/uncheck.svg";
+import check from "../../assets/check.svg";
+import uncheck from "../../assets/uncheck.svg";
 
 export function Task({
   id,
