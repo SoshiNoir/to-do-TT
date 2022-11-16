@@ -1,5 +1,5 @@
 import { ClipboardText } from "phosphor-react";
-import React, { useEffect, useState } from "react";
+import React, { useState, useCallback } from "react";
 import { v4 } from "uuid";
 import styles from "./styles.module.css";
 import { NewTask } from "../../components/NewTask";
@@ -10,8 +10,10 @@ export function Dashboard() {
     { id: v4(), content: "Terminar aplicação", done: false },
   ]);
 
-  const [tasksDoneNumber, setTasksDoneNumber] = useState(0);
-
+  const tasksDoneNumber = useCallback(() => {
+    return tasks.filter((task) => task.done === true).length;
+  }, [tasks]);
+  
   function handleCreateTask(newTask) {
     setTasks((prevState) => [...prevState, newTask]);
   }
@@ -35,10 +37,6 @@ export function Dashboard() {
     setTasks(newTask);
   }
 
-  useEffect(() => {
-    setTasksDoneNumber(tasks.filter((task) => task.done === true).length)
-  }, [tasks]);
-
   return (
     <div className="wrapper">
       <NewTask onHandleCreateTask={handleCreateTask} />
@@ -55,7 +53,7 @@ export function Dashboard() {
               <p className={styles.concluidas}>Concluídas</p>
               <div className={styles.counter}>
                 <p>
-                  {tasksDoneNumber} de {tasks.length}
+                  {tasksDoneNumber()} de {tasks.length}
                 </p>
               </div>
             </div>
