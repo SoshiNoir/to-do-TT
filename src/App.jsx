@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "./components/Header";
 import "./global.css";
 
-import { Dashboard } from "./components/Dashboard";
+import { Dashboard } from "./Pages/Dashboard";
 
 function App() {
   return (

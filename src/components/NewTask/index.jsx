@@ -1,7 +1,7 @@
 import { PlusCircle } from "phosphor-react";
 import React, { useState } from "react";
 import { v4 } from "uuid";
-import styles from "./NewTask.module.css";
+import styles from "./styles.module.css";
 
 export function NewTask({ onHandleCreateTask }) {
   const [newTaskText, setNewTaskText] = useState("");

@@ -1,6 +1,7 @@
-import styles from "./Header.module.css";
+import React from "react";
+import styles from "./styles.module.css";
 
-import TDTTLogo from "../assets/TDTT-logo.svg";
+import TDTTLogo from "../../assets/TDTT-logo.svg";
 
 export function Header() {
   return (
